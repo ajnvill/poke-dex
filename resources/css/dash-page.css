@@ -1,0 +1,40 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6; /* Light mode background */
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Main content */
+.main-content {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Centered box */
+.centered-box {
+    width: 100%;
+    max-width: 80rem; /* Equivalent to max-w-7xl */
+    margin: 0 auto;
+    padding: 0 2rem; /* Equivalent to sm:px-6 lg:px-8 */
+}
+/* Card styling */
+.pokedex-card {
+    background-color: #ffffff; /* White background for light mode */
+    border-radius: 0.5rem; /* Equivalent to sm:rounded-lg */
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); /* shadow-sm */
+    overflow: hidden;
+}
+.pokedex-content {
+    padding: 1.5rem; /* Equivalent to p-6 */
+    color: #111827; /* Dark text for light mode */
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
