@@ -1,0 +1,142 @@
+/* Navigation Styles */
+nav {
+    background-color: rgba(181, 233, 255, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+/* Nav Links */
+.nav-link,
+.responsive-nav-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: block;
+    background-color: rgba(181, 233, 255, 0.8);
+    border: 1px solid rgba(181, 233, 255, 0.8);
+}
+
+.nav-link {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    font-size: 15px;
+}
+
+.nav-link:hover,
+.responsive-nav-link:hover {
+    background-color: #4dc9ff !important; /* Hover color */
+    border-color: #4dc9ff !important;
+    color: white !important;
+    text-shadow: none;
+    transform: translateY(-2px);
+}
+
+/* Dropdown Styles */
+.x-dropdown-content {
+    background-color: rgba(181, 233, 255, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.x-dropdown-link {
+    color: rgba(255, 255, 255, 0.9); /* Dirty white text */
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+
+.x-dropdown-content .x-dropdown-link:hover {
+    background-color: #4dc9ff !important; /* Hover color */
+    color: white !important;
+}
+
+/* Active state */
+.x-nav-link-active,
+.x-responsive-nav-link-active,
+.active-dropdown .nav-link {
+    background-color: #00b3ff !important; /* Active color */
+    border-color: #00b3ff !important;
+    color: white !important;
+}
+
+/* Mobile menu */
+.sm\:hidden {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .sm\:hidden {
+        display: block;
+    }
+}
+
+/* Spacer for fixed nav */
+.h-16 {
+    height: 4rem;
+}
+
+.d-link {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    align-content: center;
+}
+
+.custom-dropdown-content a {
+    transition: background-color 0.2s ease;
+    color: rgba(255, 255, 255, 0.9); /* Dirty white text */
+}
+
+.custom-dropdown-content a:hover {
+    background-color: #4dc9ff !important; /* Hover color */
+    color: white !important;
+}
+
+.pokemon-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pokemon-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(181, 233, 255, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pokemon-dropdown:hover .pokemon-dropdown-content {
+    display: block;
+    border: 1px solid rgba(181, 233, 255, 0.8);
+    border-radius: 5px;
+}
+
+.pokemon-dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.pokemon-dropdown-link:hover {
+    background-color: #4dc9ff !important; /* Hover color */
+    color: white !important;
+}
